@@ -4,17 +4,19 @@ This module is platform-specific: Windows<br>
 <br>
 Before using the module it must be loaded:
 <pre>
- (load "C:\Program Files (x86)/newlisp/modules/message-box.lsp")
- ; or shorter
- (module "message-box.lsp")
+(load "C:\Program Files (x86)/newlisp/modules/message-box.lsp")
+</pre>
+...or shorter:
+<pre>
+(module "message-box.lsp")
  </pre>
 
-Main function:
-win-message-box:show
-syntax: (win-message-box:show title message flags)
-return: The message box return value.
-
-Displays a message box matching the given title message and flags.
+Main function:<br>
+win-message-box:show<br>
+syntax: (win-message-box:show title message flags)<br>
+return: The message box return value.<br>
+Displays a message box matching the given title message and flags.<br>
+<br>
 Example:
 <pre>
  (set result (win-message-box:show "My Title" "Please select something:" (+ win-message-box:MB_CANCELTRYCONTINUE)))
@@ -29,7 +31,7 @@ Full program example:
     (10         (win-message-box:show appname "You clicked on Try Again." win-message-box:MB_OK))
     (11         (win-message-box:show appname "You clicked on Continue."  win-message-box:MB_OK))
     (true       (win-message-box:show appname (append "You clicked on ID: " (string result)) win-message-box:MB_OK)))
- <pre>
+ </pre>
  
  Dexter Santucci<br>
  April 2019
