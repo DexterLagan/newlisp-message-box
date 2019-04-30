@@ -11,7 +11,7 @@ Before using the module it must be loaded:
 (module "message-box.lsp")
 </pre>
 
-*Main function:*<br>
+<b>Main function:</b><br>
 win-message-box:show<br>
 syntax: (win-message-box:show title message flags)<br>
 return: The message box return value.<br>
