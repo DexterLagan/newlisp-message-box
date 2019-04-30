@@ -9,7 +9,7 @@ Before using the module it must be loaded:
 ...or shorter:
 <pre>
 (module "message-box.lsp")
- </pre>
+</pre>
 
 Main function:<br>
 win-message-box:show<br>
