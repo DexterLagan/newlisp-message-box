@@ -22,7 +22,7 @@ Example:
  (set result (win-message-box:show "My Title" "Please select something:" (+ win-message-box:MB_CANCELTRYCONTINUE)))
 </pre>
 Full program example:
- <pre>
+<pre>
  (define appname "My Program")
  (define result (win-message-box:show appname "Please select something:" (+ win-message-box:MB_CANCELTRYCONTINUE)))
  (case result
@@ -31,7 +31,7 @@ Full program example:
     (10         (win-message-box:show appname "You clicked on Try Again." win-message-box:MB_OK))
     (11         (win-message-box:show appname "You clicked on Continue."  win-message-box:MB_OK))
     (true       (win-message-box:show appname (append "You clicked on ID: " (string result)) win-message-box:MB_OK)))
- </pre>
- 
- Dexter Santucci<br>
- April 2019
+</pre>
+<br>
+Dexter Santucci<br>
+April 2019
